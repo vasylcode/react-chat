@@ -7,6 +7,10 @@ import reducer from './reducer';
 import JoinBlock from './components/JoinBlock';
 import Chat from './components/Chat';
 
+/**
+ * Funkcja głowna aplikacji web czatu
+ * @returns Wrapper with JoinBlock and Chat
+ */
 function App() {
   const [state, dispatch] = React.useReducer(reducer, {
     joined: false,

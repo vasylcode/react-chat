@@ -1,6 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-
+/**
+ * React Component JoinBlock
+ * @param {*} onLogin 
+ * @returns Returns block with joining form
+ */
 function JoinBlock({ onLogin }) {
   const [roomId, setRoomId] = React.useState('');
   const [userName, setUserName] = React.useState('');

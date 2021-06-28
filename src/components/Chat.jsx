@@ -1,6 +1,10 @@
 import React from 'react';
 import socket from '../socket';
 
+/**
+ * Chat react component
+ * @returns All chat block
+ */
 function Chat({ users, messages, userName, roomId, onAddMessage }) {
   const [messageValue, setMessageValue] = React.useState('');
   const messagesRef = React.useRef(null);
